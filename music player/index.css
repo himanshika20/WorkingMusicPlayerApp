@@ -1,0 +1,98 @@
+.main
+{
+    width: 100vw;
+    height: 100vh;
+    background-color:antiquewhite;
+    display: grid;
+    place-items: center;
+}
+.music
+{
+    height: 30rem;
+    width: 20rem;
+    background-color:rgb(5, 5, 5);
+    text-align: center;
+    border-radius: 8%;
+    padding: 2rem;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img
+{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1rem 2rem 1rem gray;
+}
+#song
+{
+    text-transform: uppercase;
+    color: #ffff;
+    font-size:2.5rem;
+    font-weight: 500;
+    text-shadow: 0rem 0.3rem 0.5rem yellow;
+}
+#artist
+{
+    text-transform: uppercase;
+    color: #ffff;
+    font-size:1.3rem;
+    font-weight: 600;
+}
+.music_control1
+{
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 0.6rem;
+}
+.music_control1 .fa:hover{
+    color: gray;
+    cursor: pointer;
+}
+.music_control
+{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+.music_control .fa:hover{
+    color: gray;
+    cursor: pointer;
+}
+.music_control .button
+{
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.music_control .button:hover
+{
+    color:white;
+    background-color:gray;
+}
+.anime
+{
+    animation:rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer
+{
+    from{
+        transform:rotate(0deg);
+    }
+   to {
+       transform:rotate(360deg);
+   }
+}
